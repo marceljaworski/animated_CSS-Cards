@@ -31,8 +31,9 @@ box-shadow: inset 2px 2px 2px #bebebe,
 }
 .card-list::-webkit-scrollbar-track {
   background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(0, 122, 147) 100%);
 }
+
 .card {
   display: flex;
   position: relative;
@@ -45,4 +46,16 @@ box-shadow: inset 2px 2px 2px #bebebe,
   border-radius: 16px;
   background: var(--dark-color);
   box-shadow: -1rem 0 3rem #000;
+
+  transition: .2s;
+}
+
+.card:hover {
+  transform: translateY(-1rem);
+}
+.card:hover~.card { /* ~ General Sibling Combinator*/
+  transform: translateX(130px);
+}
+.card:not(:first-child){
+  margin-left: -130px;
 }
