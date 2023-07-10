@@ -93,6 +93,22 @@ box-shadow: inset 2px 2px 2px #bebebe,
   font-weight: 700;
   color: #7a7a8c
 }
+.card-header {
+  margin-bottom: auto;
+}
+
+.card-header p {
+  font-size: 14px;
+  margin: 0 0 1rem;
+  color: #7a7a8c;
+}
+
+.card-header h2 {
+  font-size: 20px;
+  margin: .25rem 0 auto;
+  cursor: pointer;
+}
+
 .card-header h2:hover {
   background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   text-shadow: none;
