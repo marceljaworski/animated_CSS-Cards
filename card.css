@@ -77,7 +77,18 @@ box-shadow: inset 2px 2px 2px #bebebe,
   margin: 16px 10px;
   background-color: aqua;
 }
-.author-name-prefix {
+.half-circle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 48px;
+  fill: none;
+  stroke: #ff8800;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+.author-name-prefix { 
   font-style: normal;
   font-weight: 700;
   color: #7a7a8c
@@ -85,7 +96,7 @@ box-shadow: inset 2px 2px 2px #bebebe,
 .card-header h2:hover {
   background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   text-shadow: none;
-  background-clip: text;
+  background-clip: text; 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
